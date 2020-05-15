@@ -19,6 +19,8 @@ import {MatDividerModule} from '@angular/material/divider';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import {MatRadioModule} from '@angular/material/radio';
 import { NgClassComponent } from './ng-class/ng-class.component';
+import { NgIfComponent } from './ng-if/ng-if.component';
+import { SubNgIfComponent } from './ng-if/sub-ng-if/sub-ng-if.component';
 
 
 
@@ -31,6 +33,8 @@ import { NgClassComponent } from './ng-class/ng-class.component';
     TwoWayDatabindComponent,
     NgStyleComponent,
     NgClassComponent,
+    NgIfComponent,
+    SubNgIfComponent,
 
   ],
   imports: [
