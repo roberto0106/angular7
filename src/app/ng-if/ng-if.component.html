@@ -1,6 +1,5 @@
 <mat-card>
-  <mat-card-title>Select</mat-card-title>
-  Select the fields you need:
+  <mat-card-title> Select the fields you need:</mat-card-title>
   <mat-card-content>
     <mat-checkbox [(ngModel)]="checkName" name="checkName">Name</mat-checkbox>
     <mat-checkbox [(ngModel)]="checkAddress" name="checkAddress">Address</mat-checkbox>
@@ -10,21 +9,22 @@
     <mat-divider></mat-divider>
 
     <form>
+
       <mat-form-field *ngIf="checkName">
         <mat-label>Name</mat-label>
         <input matInput placeholder="Name">
       </mat-form-field>
-
+      <br>
       <mat-form-field *ngIf="checkAddress">
         <mat-label>Address</mat-label>
         <input matInput placeholder="Address">
       </mat-form-field>
-
+      <br>
       <mat-form-field *ngIf="checkPhone">
         <mat-label>Phone</mat-label>
         <input matInput placeholder="Phone">
       </mat-form-field>
-
+      <br>
       <mat-form-field *ngIf="checkAge">
         <mat-label>Age</mat-label>
         <input matInput placeholder="Age">
@@ -33,7 +33,6 @@
 
   </mat-card-content>
   <mat-card-actions>
-<p>Result:</p>
-<p *ngIf="checkName && checkAddress && checkPhone && checkAge"><app-sub-ng-if></app-sub-ng-if></p>
+    <p *ngIf="checkName && checkAddress && checkPhone && checkAge"><app-sub-ng-if></app-sub-ng-if></p>
   </mat-card-actions>
 </mat-card>

@@ -1,0 +1,47 @@
+<section>
+  <mat-card>
+    <mat-card-title>Names (array)</mat-card-title>
+    <mat-card-content>
+      <mat-selection-list #selectednames>
+        <mat-list-option *ngFor="let name of names">{{ name }}</mat-list-option>
+      </mat-selection-list>
+    </mat-card-content>
+    <mat-card-actions>
+      <p>
+        Options selected: {{selectednames.selectedOptions.selected.length}}
+      </p>
+    </mat-card-actions>
+  </mat-card>
+</section>
+
+<section>
+  <mat-card>
+    <mat-card-title></mat-card-title>
+    <mat-card-content>
+      <mat-list>
+        <h3 matSubheader>Names (array)</h3>
+        <mat-list-item *ngFor="let name of names">
+          <mat-icon matListIcon>person</mat-icon>
+          <h4 matLine>{{ name }}</h4>
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+    <mat-card-actions></mat-card-actions>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-title></mat-card-title>
+    <mat-card-content>
+      <mat-list>
+        <h3 matSubheader>Cities (object)</h3>
+        <mat-list-item *ngFor="let city of cities">
+          <mat-icon matListIcon>location_city</mat-icon>
+          <h4 matLine>{{ city.name }}</h4>
+          <h4 matLine>{{ city.uf }}</h4>
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+    <mat-card-actions></mat-card-actions>
+  </mat-card>
+
+</section>

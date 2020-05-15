@@ -21,7 +21,11 @@ import {MatRadioModule} from '@angular/material/radio';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
 import { SubNgIfComponent } from './ng-if/sub-ng-if/sub-ng-if.component';
-
+import { NgForComponent } from './ng-for/ng-for.component';
+import {MatListModule} from '@angular/material/list';
+import { NgForFormComponent } from './ng-for-form/ng-for-form.component';
+import { NgSwitchComponent } from './ng-switch/ng-switch.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 
 @NgModule({
@@ -35,6 +39,10 @@ import { SubNgIfComponent } from './ng-if/sub-ng-if/sub-ng-if.component';
     NgClassComponent,
     NgIfComponent,
     SubNgIfComponent,
+    NgForComponent,
+    NgForFormComponent,
+    NgSwitchComponent,
+
 
   ],
   imports: [
@@ -50,7 +58,9 @@ import { SubNgIfComponent } from './ng-if/sub-ng-if/sub-ng-if.component';
     MatSelectModule,
     FormsModule,
     MatDividerModule,
-    MatRadioModule
+    MatRadioModule,
+    MatListModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
