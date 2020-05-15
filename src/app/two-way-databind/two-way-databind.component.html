@@ -1,0 +1,65 @@
+
+<section>
+
+<mat-card>
+  <mat-card-title>TwoWayDataBind with filds and variables</mat-card-title>
+  <mat-card-content>
+    <form>
+      <p>
+        <mat-form-field>
+          <input matInput [(ngModel)]="name1" name="fild1" (input)="teste($event)">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field>
+          <input matInput [(ngModel)]="name2" name="fild2">
+        </mat-form-field>
+      </p>
+
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <p>{{ name1 }}</p>
+    <p>{{ name2 }}</p>
+  </mat-card-actions>
+</mat-card>
+
+</section>
+
+<mat-divider></mat-divider>
+
+<section>
+
+  <mat-card>
+    <mat-card-title>TwoWayDataBind with Object</mat-card-title>
+    <mat-card-content>
+        <mat-form-field>
+          <mat-label>Name</mat-label>
+          <input matInput [(ngModel)]="object.name">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <mat-label>Last name</mat-label>
+          <input matInput  [(ngModel)]="object.lastname">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <mat-label>Adress</mat-label>
+          <input matInput  [(ngModel)]="object.adress">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <mat-label>Age</mat-label>
+          <input matInput  [(ngModel)]="object.age">
+        </mat-form-field>
+
+    </mat-card-content>
+    <mat-card-actions>
+      <p>{{ object.name }}</p>
+      <p>{{ object.lastname }}</p>
+      <p>{{ object.adress }}</p>
+      <p>{{ object.age }}</p>
+    </mat-card-actions>
+  </mat-card>
+
+  </section>

@@ -1,0 +1,40 @@
+<p>event-binding works!</p>
+
+<section>
+  <button mat-button color="primary" (click)="save()">Save</button>
+  <button mat-button color="warn" (click)="inc()">{{buttonName}}</button>
+</section>
+
+<section>
+  <button mat-button color="primary" [disabled]="!btnEnable">Button 1</button>
+  <button mat-button color="warn" [disabled]="!btnEnable">Button 2</button>
+  <button mat-button color="warn" (click)="disable()" [disabled]="!btnEnable">Disable</button>
+
+  <mat-progress-spinner
+    class="example-margin"
+    color="primary"
+    [mode]="spinnerMode"
+    [value]="i">
+  </mat-progress-spinner>
+
+</section>
+
+<section>
+ <mat-card>
+  <mat-checkbox (change)="cbChange($event)" >Check me!</mat-checkbox><br>
+  <mat-form-field>
+    <mat-label>Cars</mat-label>
+    <mat-select matNativeControl required (selectionChange)="selectionChange($event)" [disabled] = "selectEnable">
+      <mat-option value="volvo">Volvo</mat-option>
+      <mat-option value="saab">Saab</mat-option>
+      <mat-option value="mercedes">Mercedes</mat-option>
+      <mat-option value="audi">Audi</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-card-actions>
+    O Valor selecionado é: {{ optionSelected }}
+  </mat-card-actions>
+ </mat-card>
+
+
+</section>

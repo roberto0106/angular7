@@ -1,0 +1,35 @@
+mat-card{
+  margin: 30px;
+}
+
+
+.myclass1{
+ background-color: blue;
+ color: cornsilk;
+ font-size: large;
+ padding: 10px;
+}
+
+
+.myclass2{
+  background-color: crimson;
+  color: cornsilk;
+  font-size: small;
+  padding: 20px;
+ }
+
+
+.myclass3{
+  background-color: darkmagenta;
+  color: cornsilk;
+  font-size: medium;
+  padding: 5px;
+ }
+
+
+.myclass4{
+  background-color: darkslateblue;
+  color: cornsilk;
+  font-size: 22px;
+  padding: 10px;
+ }
