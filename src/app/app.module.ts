@@ -27,6 +27,12 @@ import { NgForFormComponent } from './ng-for-form/ng-for-form.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { NgTemplateComponent } from './ng-template/ng-template.component';
+import { NgContainerComponent } from './ng-container/ng-container.component';
+import { NgContentComponent } from './ng-content/ng-content.component';
+import { InputBindingComponent } from './input-binding/input-binding.component';
+import { ClientComponent } from './input-binding/client/client.component';
+import { EventComponent } from './event/event.component';
+import { ChildComponent } from './event/child/child.component';
 
 
 @NgModule({
@@ -44,6 +50,12 @@ import { NgTemplateComponent } from './ng-template/ng-template.component';
     NgForFormComponent,
     NgSwitchComponent,
     NgTemplateComponent,
+    NgContainerComponent,
+    NgContentComponent,
+    InputBindingComponent,
+    ClientComponent,
+    EventComponent,
+    ChildComponent,
 
 
   ],
