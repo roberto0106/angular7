@@ -33,6 +33,8 @@ import { InputBindingComponent } from './input-binding/input-binding.component';
 import { ClientComponent } from './input-binding/client/client.component';
 import { EventComponent } from './event/event.component';
 import { ChildComponent } from './event/child/child.component';
+import { ListClientComponent } from './list-client/list-client.component';
+import { ItemClientComponent } from './list-client/item-client/item-client.component';
 
 
 @NgModule({
@@ -56,8 +58,8 @@ import { ChildComponent } from './event/child/child.component';
     ClientComponent,
     EventComponent,
     ChildComponent,
-
-
+    ListClientComponent,
+    ItemClientComponent
   ],
   imports: [
     BrowserModule,
